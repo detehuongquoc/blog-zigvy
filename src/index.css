@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+}
+.header img {
+  height: 150px;
+}
+.header h1 {
+  margin: auto 0;
+}
+.posts-modify {
+  margin-bottom: 50px;
+}
+.post-custom {
+  margin-bottom: 20px;
+  display: flex;
+}
+.infor-post {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.content-comment {
+  display: flex;
+}
+ion-icon {
+  margin-right: 10px;
+  font-size: 30px;
+  margin-bottom: auto;
+}
+
+.wrap-comment {
+  margin-bottom: auto;
+}
+.avatar-any {
+  height: 150px !important;
+}
+.wrap-user-header {
+  display: flex;
+}
+.wrap-user-header h1 {
+  margin-left: 20px;
 }
