@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllpost, postSelector } from "../store/reducers/postSlice";
+import {
+  getAllpost,
+  postSelector,
+  searchSelector,
+} from "../store/reducers/postSlice";
 import { getAllComment, commentSelector } from "../store/reducers/commentSlice";
 import { getAllUser } from "../store/reducers/userSlice";
 import Post from "./Post";
 const Posts = () => {
-  const post = useSelector(postSelector);
-  const commentAll = useSelector(commentSelector);
+  const posts = useSelector(postSelector);
+  const searchvalue = useSelector(searchSelector);
 
   const dispatch = useDispatch();
 
@@ -22,21 +26,19 @@ const Posts = () => {
   }, [dispatch]);
   return (
     <div className="row posts-modify">
-      {post.map((post) => {
-        const comments = commentAll.filter((coment) => {
-          return coment.postId === post.id;
-        });
-        return (
+      {posts
+        .filter((post) => {
+          return post.title.toLowerCase().includes(searchvalue.toLowerCase());
+        })
+        .map((post) => (
           <Post
             title={post.title}
             body={post.body}
             key={post.id}
             id={post.id}
-            comments={comments}
             userId={post.userId}
           />
-        );
-      })}
+        ))}
     </div>
   );
 };

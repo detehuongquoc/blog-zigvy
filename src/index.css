@@ -51,13 +51,11 @@ ion-icon {
   margin-bottom: auto;
 }
 .avatar-any {
-  height: 150px !important;
+  height: 100px !important;
+  margin: auto 0;
 }
 .wrap-user-header {
   display: flex;
-}
-.wrap-user-header h1 {
-  margin-left: 20px;
 }
 .not-found img {
   width: 100%;
@@ -70,6 +68,11 @@ ion-icon {
 .detail-post h1 {
   margin-bottom: 20px;
 }
+.detail-post img {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 300px;
+}
 .card-body a {
   text-decoration: none;
   color: black;
@@ -77,4 +80,12 @@ ion-icon {
 }
 .card-body a :hover {
   color: blue;
+}
+.form-search-mofidy {
+  height: 40px;
+  margin: auto 0;
+  width: 50%;
+}
+.colap-modify {
+  margin-top: 20px;
 }

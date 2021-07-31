@@ -38,7 +38,7 @@ const Post = ({ title, body, id, userId }) => {
               {comments.length} Comment
             </a>
           </p>
-          <div className="collapse" id={`b${id}`}>
+          <div className="collapse colap-modify" id={`b${id}`}>
             {comments.map((comment) => (
               <>
                 <div className="card card-body wrap-card-body">

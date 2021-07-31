@@ -16,6 +16,10 @@ const DetailPost = () => {
   return (
     <div className="detail-post">
       <h1>{singlePost && singlePost.title}</h1>
+      <img
+        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+        alt="Italian Trulli"
+      />
       <h6>{singlePost && singlePost.body}</h6>
     </div>
   );
