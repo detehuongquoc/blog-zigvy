@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllComment, commentSelector } from "../store/reducers/commentSlice";
 import { getAllUser, userSelector } from "../store/reducers/userSlice";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import moment from "moment";
 const Post = ({ title, body, id, userId }) => {
   const commentAll = useSelector(commentSelector);
   const Users = useSelector(userSelector);
@@ -23,7 +24,7 @@ const Post = ({ title, body, id, userId }) => {
 
           <div className="infor-post">
             <p>author : {users && users.name}</p>
-            <p>Creat At : 27/04/2000</p>
+            <p>Creat At : {moment(new Date()).format("YYYY/MM/DD")}</p>
           </div>
           <p className="card-text">{body}</p>
           <p className="wrap-comment">
