@@ -1,12 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <img
-        src="https://logoart.vn/blog/wp-content/uploads/2010/03/Thiet-ke-logo-dang-cap-sang-tao6.png"
-        alt="Italian Trulli"
-      />
+      <Link to="/">
+        <img
+          src="https://logoart.vn/blog/wp-content/uploads/2010/03/Thiet-ke-logo-dang-cap-sang-tao6.png"
+          alt="Italian Trulli"
+        />
+      </Link>
       <h1>BLOG</h1>
       <div className="wrap-user-header">
         <img

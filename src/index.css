@@ -59,3 +59,22 @@ ion-icon {
 .wrap-user-header h1 {
   margin-left: 20px;
 }
+.not-found img {
+  width: 100%;
+}
+.detail-post {
+  height: 600px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+.detail-post h1 {
+  margin-bottom: 20px;
+}
+.card-body a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.card-body a :hover {
+  color: blue;
+}
